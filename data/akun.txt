@@ -1,0 +1,6 @@
+admin 12345 admin
+wafi 123 user
+zaid 123 user
+fifah 123 user 
+rifa 123 user 
+
