@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "menu.h"
-#include "kalkulator.h"
+#include "header.h"
 
 int main() {
     int pilihan;
