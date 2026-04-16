@@ -2,7 +2,7 @@
 #include "alat.h"
 
 void tambahAlat() {
-  FILE *file = fopen("alat.c", "a");
+  FILE *file = fopen("alat.txt", "a");
 
     Alat a;
 
@@ -134,4 +134,4 @@ void lihatAlat() {
 
     fclose(file);
 }
-3206649997|pc|LG|Ryzen|2025|2
+
