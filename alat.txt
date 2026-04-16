@@ -1,2 +1,12 @@
+<<<<<<< HEAD
 3|wafi|desain|apipi|2006|3
 12|aci|asus|324xl|2020|1
+=======
+1|computer|loq|15|2025|20
+3|Mouse|Razer|Mamba|2020|20
+4|Meja|IKEA|M1|2019|5
+5|Kursi|IKEA|K1|2019|15
+6|Papan Tulis|Standard|Whiteboard|2018|15
+2|keybord|Achee|A7|2026|20
+>>>>>>> 608e2391435f6e1bc4cf49f0cd3841d9b1578604
+12|fifah|asus|124l14|2023|1
