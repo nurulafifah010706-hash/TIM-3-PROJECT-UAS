@@ -1,41 +1,44 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "header.h"
 
 int main() {
-    int pilihan;
-    int a, b;
+    int pilih;
+    int berhasilLogin = 0;
 
     do {
-        tampilkanMenu();
+        system("cls"); // kalau di Linux ganti "clear"
+
+        printf("=================================\n");
+        printf("        SISTEM APLIKASI\n");
+        printf("=================================\n");
+        printf("1. Login\n");
+        printf("0. Keluar\n");
+        printf("=================================\n");
         printf("Pilih menu: ");
-        scanf("%d", &pilihan);
+        scanf("%d", &pilih);
 
-        switch (pilihan) {
+        switch(pilih) {
             case 1:
-                printf("Masukkan angka 1: ");
-                scanf("%d", &a);
-                printf("Masukkan angka 2: ");
-                scanf("%d", &b);
-                printf("Hasil: %d\n", tambah(a, b));
+                berhasilLogin = login();
+                if (berhasilLogin == 1) {
+                    menuUtama();
+                }
                 break;
 
-            case 2:
-                printf("Masukkan angka 1: ");
-                scanf("%d", &a);
-                printf("Masukkan angka 2: ");
-                scanf("%d", &b);
-                printf("Hasil: %d\n", kurang(a, b));
-                break;
-
-            case 3:
-                printf("Program selesai.\n");
+            case 0:
+                printf("Terima kasih!\n");
                 break;
 
             default:
                 printf("Pilihan tidak valid!\n");
         }
 
-    } while (pilihan != 3);
+        printf("\nTekan ENTER untuk lanjut...");
+        getchar(); 
+        getchar();
+
+    } while(pilih != 0);
 
     return 0;
 }
